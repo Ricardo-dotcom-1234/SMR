@@ -1,0 +1,197 @@
+{
+  "main": {
+    "id": "3d9c46443f69350a",
+    "type": "split",
+    "children": [
+      {
+        "id": "ec1adf29a65af59f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "05c74d9c79d6624d",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Nueva pestaña"
+            }
+          }
+        ]
+      },
+      {
+        "id": "6a5c9764e694cc53",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "76b45bd396550740",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Vista gráfica"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a7b256f0e09f7f73",
+    "type": "split",
+    "children": [
+      {
+        "id": "d37c0d990d1b1002",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b838a72d1a5e020c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de archivos"
+            }
+          },
+          {
+            "id": "f449079a43be7ecf",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Buscar"
+            }
+          },
+          {
+            "id": "056a18135bb4bb2c",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "e3a7fe344c407cec",
+    "type": "split",
+    "children": [
+      {
+        "id": "a2c74bab2b7205e9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9dfb23e657482172",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Enlaces entrantes"
+            }
+          },
+          {
+            "id": "f3c09b7cf69a7024",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Enlaces salientes"
+            }
+          },
+          {
+            "id": "5d2f1d10e508f81b",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etiquetas"
+            }
+          },
+          {
+            "id": "b6cc67d5ce336e6a",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Esquema"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir selector rápido": false,
+      "graph:Abrir vista gráfica": false,
+      "canvas:Crear nuevo lienzo": false,
+      "daily-notes:Abrir la nota de hoy": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "bases:Crear nueva base": false
+    }
+  },
+  "active": "05c74d9c79d6624d",
+  "lastOpenFiles": [
+    "Seguridad Informática/Tema  2.md",
+    "Seguridad Informática/Ejercicios UD2.md",
+    "Seguridad Informática/Tipos de SAI.md",
+    "Seguridad Informática/Capturas/Pasted image 20251010092845.png",
+    "Seguridad Informática/Capturas/Pasted image 20251010092140.png",
+    "Seguridad Informática/Capturas/Pasted image 20251010092440.png",
+    "Seguridad Informática/Capturas",
+    "Pasted image 20251010092839.png",
+    "Pasted image 20251010092438.png",
+    "Bienvenido.md",
+    "Seguridad Informática",
+    "cree un enlace.md"
+  ]
+}
