@@ -1,20 +1,24 @@
 {
   "main": {
-    "id": "0bf0ea61c07f11c2",
+    "id": "153cadec563ef4d3",
     "type": "split",
     "children": [
       {
-        "id": "2b50adfef67ca230",
+        "id": "65f4c4bd1f5878f7",
         "type": "tabs",
         "children": [
           {
-            "id": "c1f2d71977100563",
+            "id": "cb68808399c88661",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "2SMRA/Seguridad Informática/Tema  2.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nueva pestaña"
+              "title": "Tema  2"
             }
           }
         ]
@@ -23,15 +27,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "c7f55b49b47e3028",
+    "id": "8e999d6b9badc244",
     "type": "split",
     "children": [
       {
-        "id": "edf9a2aed056743d",
+        "id": "48a7b6a0e511b8a8",
         "type": "tabs",
         "children": [
           {
-            "id": "ec90529c68865899",
+            "id": "380931add214f89e",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -44,7 +48,7 @@
             }
           },
           {
-            "id": "c02afcfd3041d113",
+            "id": "d5f6ff03970395bb",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -61,7 +65,7 @@
             }
           },
           {
-            "id": "ba46cce9ffae4c70",
+            "id": "4b80a2bf9c744395",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -77,19 +81,20 @@
     "width": 300
   },
   "right": {
-    "id": "634c3cfe66d81f18",
+    "id": "abe772cfc69297cf",
     "type": "split",
     "children": [
       {
-        "id": "40286cd252e7deee",
+        "id": "e22d4407ee372ea3",
         "type": "tabs",
         "children": [
           {
-            "id": "c5fcfd87583a0b04",
+            "id": "6ec76f77cedf2416",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
+                "file": "2SMRA/Seguridad Informática/Tema  2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,24 +104,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Enlaces entrantes"
+              "title": "Enlaces entrantes de Tema  2"
             }
           },
           {
-            "id": "8967f17ecdb22f0e",
+            "id": "0b409a3646c30adb",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "2SMRA/Seguridad Informática/Tema  2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Enlaces salientes"
+              "title": "Enlaces salientes de Tema  2"
             }
           },
           {
-            "id": "21e38707839f3627",
+            "id": "aafcd6d2bed71886",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -131,17 +137,18 @@
             }
           },
           {
-            "id": "08d50633a98ce49e",
+            "id": "793b1e6aa980948d",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
+                "file": "2SMRA/Seguridad Informática/Tema  2.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Esquema"
+              "title": "Esquema de Tema  2"
             }
           }
         ]
@@ -162,6 +169,15 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "c1f2d71977100563",
-  "lastOpenFiles": []
+  "active": "380931add214f89e",
+  "lastOpenFiles": [
+    "2SMRA/Seguridad Informática/Tipos de SAI.md",
+    "2SMRA/Seguridad Informática/Tema  2.md",
+    "2SMRA/Seguridad Informática/Ejercicios UD2.md",
+    "2SMRA/Seguridad Informática/Capturas/Pasted image 20251010092845.png",
+    "2SMRA/Seguridad Informática/Capturas/Pasted image 20251010092440.png",
+    "2SMRA/Seguridad Informática/Capturas/Pasted image 20251010092140.png",
+    "2SMRA/Seguridad Informática/Capturas",
+    "2SMRA/Seguridad Informática"
+  ]
 }
