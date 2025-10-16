@@ -1,0 +1,37 @@
+body{                   /*selector= fuera{} dentro{}=declaración*/
+    background-color: rgb(22, 63, 49);              /*1=propiedad, 2=valor*/
+}
+h1{
+    color: white; 
+    text-align: center;
+    background-color: blueviolet;
+}
+p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: brown;
+    background-color: chocolate;
+    
+}
+p.intro{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    color: red;
+    background-color:dodgerblue;
+}
+div.p{
+    background-color:dimgray;
+}
+*{          /* <-----afecta a todo*/
+}
+div>p{      /* <------afecta de padre a hijo*/
+}
+/* no se usa casi pero existe ---->*/
+u+b{
+}
+h2~p{
+}
+a:{         /* <------Es una seudoclase*/
+}
+td[colspan]{            /*<-----es para editarlos atributos*/
+}
