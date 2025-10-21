@@ -27,5 +27,8 @@ Se desea comprar un SAI para conectar los siguientes aparatos eléctricos:
 Se pide:
 ● Si se ha decidido adquirir uno de la serie SPS One, ¿qué modelo de la serie es
 necesario comprar? ○ Ficha SPS One: https://www.salicru.com/files/documentacion/jm89200(1).pdf
-● Suponiendo que de forma habitual se decida no conectar ni el monitor ni el switch a la batería, y el servidor consume aproximadamente 80W de media, ¿cuál es la
-autonomía del SAI?
+500+50+35=585/0.80=731.25
+SPS 1500 ONE ya que tiene 900 W de potencia lo que nos permite conectar todo sin problemas.
+
+● Suponiendo que de forma habitual se decida no conectar ni el monitor ni el switch a la batería, y el servidor consume aproximadamente 80W de media, ¿cuál es la autonomía del SAI?
+ t= 7*1*
