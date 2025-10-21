@@ -31,4 +31,5 @@ necesario comprar? ○ Ficha SPS One: https://www.salicru.com/files/documentacio
 SPS 1500 ONE ya que tiene 900 W de potencia lo que nos permite conectar todo sin problemas.
 
 ● Suponiendo que de forma habitual se decida no conectar ni el monitor ni el switch a la batería, y el servidor consume aproximadamente 80W de media, ¿cuál es la autonomía del SAI?
- t= 7*1*
+ t= 7 * 1 * 12 /80 * 0.8 * 60= 50,4 minutos aprox.
+ 
