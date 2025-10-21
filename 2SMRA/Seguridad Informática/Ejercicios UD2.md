@@ -19,3 +19,4 @@ autonomía sabiendo que los switches operan a unos 15W y el servidor a 75W.
 - Se necesitaría un SAI de la gama 1000IR. ya que necesitamos una potencia de 536W de potencia al 70% y ese es el modelo que nos asegura esa potencia.
 - t=9 * 2 * 12/150 * 0,8 * 60=69 minutos aprox.
 
+**3-Sobre SAI**
