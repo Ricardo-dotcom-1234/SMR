@@ -20,3 +20,12 @@ autonomía sabiendo que los switches operan a unos 15W y el servidor a 75W.
 - t=9 * 2 * 12/150 * 0,8 * 60=69 minutos aprox.
 
 **3-Sobre SAI**
+Se desea comprar un SAI para conectar los siguientes aparatos eléctricos:
+● Un servidor cuya potencia máxima es 500W.
+● Un monitor de 50W.
+● Un switch de 35W.
+Se pide:
+● Si se ha decidido adquirir uno de la serie SPS One, ¿qué modelo de la serie es
+necesario comprar? ○ Ficha SPS One: https://www.salicru.com/files/documentacion/jm89200(1).pdf
+● Suponiendo que de forma habitual se decida no conectar ni el monitor ni el switch a la batería, y el servidor consume aproximadamente 80W de media, ¿cuál es la
+autonomía del SAI?
