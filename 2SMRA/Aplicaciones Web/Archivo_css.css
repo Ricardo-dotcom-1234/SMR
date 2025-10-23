@@ -50,10 +50,14 @@ div.2{
     border-color: black;
     position: relative; right: 15px;
 }
-div.3>p.2{
+div.3{
     border-style: dotted; 
     border-color: white;
     position: absolute; left: 10px;
+}
+div.stiscky{
+    position:sticky;
+    top:0;
 }
 
 
