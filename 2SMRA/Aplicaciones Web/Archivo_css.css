@@ -1,0 +1,91 @@
+body{
+background-image:url(durum.webp);background-repeat: no-repeat;
+background-position: 850px 500px;
+background-size: 200px;
+}
+h1{
+color: aliceblue; text-align: center;
+background-color: darkgreen; opacity: 0.5;
+}
+p.introduction{
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: 50px;
+padding: 20px; ;
+outline: auto;
+}
+p.hola{
+color: aliceblue;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-size: 30px;
+text-align: center;
+border: red solid; height: 60px;
+outline: auto; outline-color:peru; outline-offset: -10px;
+padding: 20px;
+}
+#expli{
+text-align: left;
+color: blueviolet;
+font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+div.intro{
+width: 80%;
+height: 600px;
+background-image:url(prueba.jpg);
+background-position: bottom right; 
+background-repeat:no-repeat;
+border-style:solid dashed ridge;
+border-color: green black green black;
+border-radius: 500px;
+margin: auto; 
+}
+p{
+background-color: aqua;
+}
+p.adios{
+position: static;
+bottom: 0px;
+right: 0px;
+}
+div.Sabaly{
+border-color: brown;
+border-style: dashed;
+position: relative; right: 30px; height:900px;   
+}
+div.antonio{
+border:khaki dashed;
+position:absolute; right: 40px; bottom:80px;
+
+
+}
+div.sticky{
+    position: sticky;
+}
+
+div.Localizacion{
+background-image:url(prueba.jpg);
+background-repeat: no-repeat;
+height: 200px;
+width: 500px;
+border: black;
+border-style: solid;
+}
+
+p.Fecha{
+text-align: right;
+margin-top: 150px;
+background-color:transparent;  
+opacity: 100%;  
+}
+p.Localizacion{
+opacity: 100%;
+}
+
+/*Hola*/
+
+/*background-attachment: fixed;\ para que se quede quieta la imagen* 
+margin: auto; se ajusta automaticamente segun el ancho
+padding afecta al ancho del contenidocontenido
+
+1px thin 3px medium 5px thick
+
+position   static relative fixed absolute sticky

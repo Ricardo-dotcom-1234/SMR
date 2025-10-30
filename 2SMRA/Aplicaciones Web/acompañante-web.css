@@ -1,0 +1,25 @@
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    background-color: #999999;
+}
+li a {
+    text-decoration: none;
+    padding: 8px 16px;
+    display: block;
+}
+li a:hover {
+    background-color: black;
+    color: white;
+}
+li a:active {
+    background-color: #33bd38;
+    color: rgb(0, 0, 0);
+}
+ul{
+    position: fixed;
+}
+
+
