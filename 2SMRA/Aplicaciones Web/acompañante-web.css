@@ -2,9 +2,11 @@ ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 20%;
+    width: 16,5;
     background-color: #999999;
     position: fixed;
+    display: flex;
+    flex-direction: row;
 }
 li a {
     text-decoration: none;
@@ -22,14 +24,11 @@ li a:active {
 li{
     border: 2px solid #dc0b0b;
 }
-div.lista{
+.lista{
     display: none;
     position: absolute;
 }
-div.lista:hover{
-    display: block;
-}
-li.list:hover div.lista{
+.list:hover .lista{
     display: block;
     background-color: #999999;
     border: 2px solid #dc0b0b;
