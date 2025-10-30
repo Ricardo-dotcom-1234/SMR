@@ -29,4 +29,9 @@ div.lista{
 div.lista:hover{
     display: block;
 }
+li.list:hover div.lista{
+    display: block;
+    background-color: #999999;
+    border: 2px solid #dc0b0b;
+}
 
