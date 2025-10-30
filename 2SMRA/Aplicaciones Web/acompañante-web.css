@@ -4,6 +4,7 @@ ul{
     padding: 0;
     width: 20%;
     background-color: #999999;
+    position: fixed;
 }
 li a {
     text-decoration: none;
@@ -18,8 +19,14 @@ li a:active {
     background-color: #33bd38;
     color: rgb(0, 0, 0);
 }
-ul{
-    position: fixed;
+li{
+    border: 2px solid #dc0b0b;
 }
-
+div.lista{
+    display: none;
+    position: absolute;
+}
+div.lista:hover{
+    display: block;
+}
 
