@@ -11,10 +11,12 @@
             "id": "ac6a7465ffed29f3",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Nueva pestaña"
+              "type": "mindmapView",
+              "state": {
+                "file": "2SMRA/Seguridad Informática/Tema 3.md"
+              },
+              "icon": "blocks",
+              "title": "Tema 3"
             }
           }
         ]
@@ -74,7 +76,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "a4caf6169539bbcb",
@@ -163,5 +165,10 @@
     }
   },
   "active": "ac6a7465ffed29f3",
-  "lastOpenFiles": []
+  "lastOpenFiles": [
+    "2SMRA/Seguridad Informática/Tema 3.md",
+    "2SMRA/Seguridad Informática/Ejercicios UD2.md",
+    "2SMRA/Aplicaciones Web/Video_Tenia_tanto.mp3",
+    "2SMRA/Seguridad Informática/Tema  2.md"
+  ]
 }

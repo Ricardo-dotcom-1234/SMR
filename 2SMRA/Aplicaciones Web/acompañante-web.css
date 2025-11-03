@@ -1,0 +1,36 @@
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 16,5;
+    background-color: #999999;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+}
+li a {
+    text-decoration: none;
+    padding: 8px 16px;
+    display: inline-block;
+}
+li a:hover {
+    background-color: black;
+    color: white;
+}
+li a:active {
+    background-color: #33bd38;
+    color: rgb(0, 0, 0);
+}
+li{
+    border: 2px solid #dc0b0b;
+}
+.lista{
+    display: none;
+    position: absolute;
+}
+.list:hover .lista{
+    display: block;
+    background-color: #999999;
+    border: 2px solid #dc0b0b;
+}
+

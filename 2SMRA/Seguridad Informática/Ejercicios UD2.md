@@ -19,3 +19,36 @@ autonomía sabiendo que los switches operan a unos 15W y el servidor a 75W.
 - Se necesitaría un SAI de la gama 1000IR. ya que necesitamos una potencia de 536W de potencia al 70% y ese es el modelo que nos asegura esa potencia.
 - t=9 * 2 * 12/150 * 0,8 * 60=69 minutos aprox.
 
+**3-Sobre SAI**
+Se desea comprar un SAI para conectar los siguientes aparatos eléctricos:
+● Un servidor cuya potencia máxima es 500W.
+● Un monitor de 50W.
+● Un switch de 35W.
+Se pide:
+● Si se ha decidido adquirir uno de la serie SPS One, ¿qué modelo de la serie es
+necesario comprar? ○ Ficha SPS One: https://www.salicru.com/files/documentacion/jm89200(1).pdf
+500+50+35=585/0.70=835.71 aprox.
+SPS 1500 ONE ya que tiene 900 W de potencia lo que nos permite conectar todo sin problemas.
+
+● Suponiendo que de forma habitual se decida no conectar ni el monitor ni el switch a la batería, y el servidor consume aproximadamente 80W de media, ¿cuál es la autonomía del SAI?
+ t= 7 * 1 * 12 /80 * 0.8 * 60= 50,4 minutos aprox.
+
+
+**4-Sobre SAI**
+Se ha decidido comprar un SAI para proteger un servidor que consume 300W y un router que consume 15W.
+Tarea:
+1. Indique qué SAI de la gama en concreto necesita comprar siguiendo los productos que se encuentran en la siguiente web: CSB Battery - UPS Series.
+300+15=315/0.7=450
+UPS 12460
+
+2. Suponiendo que tenga baterías de 9 Amperios-hora y 12 Voltios, calcule la autonomía sabiendo que el router opera a 10W normalmente y el servidor a 80W.
+t= 9 * 1 * 12/90 * 0.8 * 60=57.6 minutos aprox.
+
+
+
+**5-Sobre SAI**
+Se ha decidido comprar un SAI para proteger un sistema de videovigilancia que consume 150W y un punto de acceso que consume 25W.
+Tarea:
+1. Indique qué SAI de la gama en concreto necesita comprar siguiendo los productos que se encuentran en la siguiente web: CSB Battery - UPS Series.
+2. Suponiendo que tenga baterías de 12 Amperios-hora y 12 Voltios, calcule la autonomía sabiendo que el punto de acceso opera a 20W normalmente y el sistema
+de videovigilancia a 100W.
