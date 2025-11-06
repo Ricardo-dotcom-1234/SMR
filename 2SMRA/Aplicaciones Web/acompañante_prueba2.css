@@ -1,0 +1,68 @@
+h1{
+    color: blue;
+    position: center;
+}
+body{
+    font-family: Arial, sans-serif;
+    background-color: #83c5ff;
+    margin: 20px;
+}
+fieldset.formulario{
+    border: 2px solid green;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+fieldset.desordenada{
+    border: 1px dashed orange;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+fieldset.ordenada{
+    border: 3px dotted purple;
+    padding: 15px;
+    margin: 20px;
+}
+fieldset.tabla{
+    border: 2px double red;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+#ta{
+    width: 15%;
+    border: 2px solid aqua;
+    border-collapse: collapse;
+}
+ul, ol{
+    text-align: left;
+    margin-left: 40px;
+}
+th, td{
+    border: 1px solid purple;
+    border-radius: 20%;
+    padding: 5px;
+    text-align: center;
+}
+img{
+    margin-right: auto;
+    width: 25%;
+}
+fieldset.audio{
+    border: 0.5px solid rgb(33, 68, 11);
+    padding: 5px;
+    margin-top: 20px;
+}
+fieldset.video{
+    border: 7px solid rgba(133, 68, 11,40%);
+    padding: 5px;
+    margin-top: 30px;
+}
+video{
+    margin: 20px center;
+    width: 70%;
+}
+a{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 20px;
+    background-color: darkblue;
+}

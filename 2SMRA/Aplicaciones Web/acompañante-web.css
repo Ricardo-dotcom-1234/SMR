@@ -33,4 +33,23 @@ li{
     background-color: #999999;
     border: 2px solid #dc0b0b;
 }
-
+body{
+    background-image: linear-gradient(to bottom,red, yellow);
+} 
+div.div1{
+    width: 300px;
+    background-image: linear-gradient(to right,white, black);
+    position: absolute;
+}
+div.div2{
+    width: 300px;
+    background-image: linear-gradient(to right bottom,blue, purple);
+    position: absolute;
+    left: 20%;
+}
+div.div3{
+    width: 300px;
+    background-image: radial-gradient(yellow, green);
+    position: absolute;
+    left: 40%;
+}
