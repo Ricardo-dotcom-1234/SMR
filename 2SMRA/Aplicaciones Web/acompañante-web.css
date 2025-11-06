@@ -87,6 +87,12 @@ div.div8{
     top: 30%;
     left: 20%;
 }
-
+div.div9{
+    width: 300px;
+    background-image: repeating-radial-gradient( red, yellow 10%, green 15%);
+    position: absolute;
+    top: 30%;
+    left: 40%;
+}
 
 
