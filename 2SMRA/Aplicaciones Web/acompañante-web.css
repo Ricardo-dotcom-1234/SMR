@@ -80,7 +80,7 @@ div.div7{
 div.div8{
     width: 300px;
     background-image:
-        linear-gradient(to bottom right,rgba(255, 1, 1, 1),rgba(0,0,0,0)75%),
+        linear-gradient(to bottom right,rgb(255, 0, 0),rgba(0,0,0,0)75%),
         linear-gradient(to right,rgba(0, 255, 0, 1),rgba(0,0,0,0) 75%),
         linear-gradient(to top left,rgba(0, 0, 255, 1), rgba(0,0,0,0) 75%);
     position: absolute;
