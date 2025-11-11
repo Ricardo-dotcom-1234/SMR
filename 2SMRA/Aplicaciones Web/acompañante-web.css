@@ -94,5 +94,40 @@ div.div9{
     top: 30%;
     left: 40%;
 }
-
+div.div10{
+    width: 300px;
+    height: 300px;
+    background-image: conic-gradient( red 45deg, yellow 90deg, green 200deg, blue 270deg,black 320deg);
+    position: absolute;
+    border-radius: 50%;
+    top: 30%;
+    left: 60%;
+}
+div.div11{
+    width: 300px;
+    height: 300px;
+    background-image: conic-gradient(from 90deg at 60% 45%, red 0deg 90deg, yellow 90deg 180deg, green 180deg 270deg, blue 270deg 360deg);
+    position: absolute;
+    border-radius: 50%;
+    top: 30%;
+    left: 80%;
+}
+div.div12{
+    width: 300px;
+    height: 300px;
+    background-image: repeating-conic-gradient( red 10%, yellow 20%);
+    position: absolute;
+    box-shadow: 3px 3px 5px 12px rgba(255, 0, 0, 0.603) inset;
+    border-radius: 50%;
+    top: 60%;
+}
+div.div13{
+    width: 300px;
+    height: 300px;
+    background-image: repeating-conic-gradient(red 0deg 10deg, blue 10deg 20deg, yellow 20deg 30deg);
+    position: absolute;
+    border-radius: 50%;
+    top: 60%;
+    left: 20%;
+}
 
