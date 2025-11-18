@@ -1,0 +1,6 @@
+body {
+    background-color: black;
+}
+img.mask{
+    mask-image:url(Foto1_transparencia.png)
+}
