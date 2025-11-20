@@ -9,6 +9,7 @@
     <p id="txt"></p>
     <p id="res"></p>
     <p id="car"></p>
+    <p id="ani"></p>
         <script>
             let nombre="C", edad;
             edad=prompt("Ingresa tu edad:");
@@ -20,14 +21,17 @@
             n2=prompt("Ingresa otro numero:");
             let resultado=suma(n1,n2);
             document.getElementById("res").innerHTML=resultado;
-            const car={
+            const car=new Object({
                 type:"Fiat",
                 model:"500",
                 color:"blanco",
-            }
-            document.getElementById("car").innerHTML="Este cohe es un "+car.type;
+            });
+            document.getElementById("car").innerHTML="Este cohe es un "+car.type + " modelo "+car["model"];
             const animal={}; //objeto vacio
                 animal.tipo="perro";
                 animal.raza="pastor aleman";
                 animal.edad=12;
+            document.getElementById("ani").innerHTML="El animal es un "+animal.tipo;
         </script>
+</body>
+</html>
