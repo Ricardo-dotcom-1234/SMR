@@ -8,6 +8,7 @@
 <body>
     <p id="txt"></p>
     <p id="res"></p>
+    <p id="car"></p>
         <script>
             let nombre="C", edad;
             edad=prompt("Ingresa tu edad:");
@@ -19,4 +20,11 @@
             n2=prompt("Ingresa otro numero:");
             let resultado=suma(n1,n2);
             document.getElementById("res").innerHTML=resultado;
+            const car={
+                type:"Fiat",
+                model:"500",
+                color:"blanco",
+            }
+            document.getElementById("car").innerHTML="Este cohe es un "+car.type;
+            
         </script>
