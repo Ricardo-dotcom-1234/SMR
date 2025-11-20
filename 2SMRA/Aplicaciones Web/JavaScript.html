@@ -26,6 +26,9 @@
                 type:"Fiat",
                 model:"500",
                 color:"blanco",
+                mostrar:function(){
+                    return this.type + " " + this.model +" " + this.color;
+                }
             });
             document.getElementById("car").innerHTML="Este cohe es un "+car.type + " modelo "+car["model"];
             const animal={}; //objeto vacio
