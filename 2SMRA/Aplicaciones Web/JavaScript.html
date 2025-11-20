@@ -22,15 +22,16 @@
             n2=prompt("Ingresa otro numero:");
             let resultado=suma(n1,n2);
             document.getElementById("res").innerHTML=resultado;
-            const car=new Object({
+            const car={
                 type:"Fiat",
                 model:"500",
                 color:"blanco",
                 mostrar:function(){
                     return this.type + " " + this.model +" " + this.color;
                 }
-            });
-            document.getElementById("car").innerHTML="Este cohe es un "+car.type + " modelo "+car["model"];
+            };
+            //document.getElementById("car").innerHTML="Este cohe es un "+car.type + " modelo "+car["model"];
+            document.getElementById("car").innerHTML=car.mostrar();
             const animal={}; //objeto vacio
                 animal.tipo="perro";
                 animal.raza="pastor aleman";
