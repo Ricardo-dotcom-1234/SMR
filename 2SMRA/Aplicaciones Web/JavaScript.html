@@ -10,6 +10,7 @@
     <p id="res"></p>
     <p id="car"></p>
     <p id="ani"></p>
+    <p id="per"></p>
         <script>
             let nombre="C", edad;
             edad=prompt("Ingresa tu edad:");
@@ -32,6 +33,14 @@
                 animal.raza="pastor aleman";
                 animal.edad=12;
             document.getElementById("ani").innerHTML="El animal es un "+animal.tipo;
+            function Person(nombre, apellido, edad, genero){
+                this.nombre_=nombre;
+                this.apellido_=apellido;
+                this.edad_=edad;
+                this.genero_=genero;
+            }
+            const persona1=new Person("Juan", "Perez", 30, "masculino");
+            document.getElementById("per").innerHTML="La persona se llama "+persona1.nombre_+" "+persona1.apellido_;
         </script>
 </body>
 </html>
