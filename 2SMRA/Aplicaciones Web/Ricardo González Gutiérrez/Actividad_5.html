@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicios de JavaScript</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h3>Ejercicio5: Crea una función dibujartabla() que dibuje una tabla de 3x3 al pulsar un botón.</h3>
+        <script>
+            let boton = document.createElement("button");
+            boton.innerHTML = "Dibujar tabla";
+            document.body.appendChild(boton);
+            boton.addEventListener("click", dibujartabla);
+            function dibujartabla() {
+                document.write("<table border='1'>");
+                for (let i=0; i<3; i++){
+                    document.write("<tr>");
+                    for (let j=0; j<3; j++){
+                        document.write("<td>", "</td>");
+                    }
+                    document.write("</tr>");
+                }
+            }
+        </script>
+    </body>
+</html>

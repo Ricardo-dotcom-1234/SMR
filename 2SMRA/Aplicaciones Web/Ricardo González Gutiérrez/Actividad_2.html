@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicios de JavaScript</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h3>Ejercicio2: Realiza un script que muestre la tabla de multiplicar de un número que introduzca el usuario por pantalla.</h3>
+        <p id="Tabla"></p>
+        <script>
+            let numero = parseInt(prompt("Introduce un número entero para mostrar su tabla de multiplicar:"));
+            document.getElementById("Tabla").innerHTML = ("<h4>Tabla de multiplicar del " + numero + ":</h4>");
+            for (let i = 1; i <= 10; i++) {
+                let resultado = numero * i;
+                document.write(numero + " x " + i + " = " + resultado + "<br>");
+            }
+        </script>
+    </body>
+</html>
