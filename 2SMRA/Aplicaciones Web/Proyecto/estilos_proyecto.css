@@ -1,3 +1,8 @@
+body{
+    background: url(Sin\ título.jpg) no-repeat center center fixed;
+    background-size: cover; /*Para que se ponga la foto en el fondo entero*/
+    color: white;
+}
 ul{
     list-style-type: none;
     margin: 0;
