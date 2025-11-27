@@ -6,7 +6,7 @@ ul{
     background-color: #999999;
     position: fixed;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 li a {
     text-decoration: none;
