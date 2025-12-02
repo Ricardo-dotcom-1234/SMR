@@ -11,12 +11,14 @@
             "id": "ac6a7465ffed29f3",
             "type": "leaf",
             "state": {
-              "type": "mindmapView",
+              "type": "markdown",
               "state": {
-                "file": "2SMRA/Seguridad Informática/Tema 3.md"
+                "file": "2SMRA/Seguridad Informática/Tema 4.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "blocks",
-              "title": "Tema 3"
+              "icon": "lucide-file",
+              "title": "Tema 4"
             }
           }
         ]
@@ -166,9 +168,20 @@
   },
   "active": "ac6a7465ffed29f3",
   "lastOpenFiles": [
+    "2SMRA/Seguridad Informática/Capturas/Pasted image 20251128100207.png",
+    "2SMRA/Seguridad Informática/Tema 4.md",
+    "2SMRA/Seguridad Informática/Capturas/Pasted image 20251128100944.png",
+    "2SMRA/Seguridad Informática/Capturas/Pasted image 20251128100311.png",
+    "2SMRA/Seguridad Informática/Capturas/Pasted image 20251128102938.png",
+    "2SMRA/Seguridad Informática/Capturas/Pasted image 20251128102751.png",
+    "2SMRA/Seguridad Informática/Capturas/Pasted image 20251128102251.png",
+    "2SMRA/Seguridad Informática/Capturas/Pasted image 20251128101644.png",
+    "2SMRA/Seguridad Informática/Capturas/Pasted image 20251128101641.png",
+    "2SMRA/Seguridad Informática/Capturas/Pasted image 20251128101355.png",
+    "2SMRA/Seguridad Informática/Capturas/Pasted image 20251128101130.png",
     "2SMRA/Seguridad Informática/Tema 3.md",
+    "2SMRA/Seguridad Informática/Tema  2.md",
     "2SMRA/Seguridad Informática/Ejercicios UD2.md",
-    "2SMRA/Aplicaciones Web/Video_Tenia_tanto.mp3",
-    "2SMRA/Seguridad Informática/Tema  2.md"
+    "2SMRA/Aplicaciones Web/Video_Tenia_tanto.mp3"
   ]
 }
