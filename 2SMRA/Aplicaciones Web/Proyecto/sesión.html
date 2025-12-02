@@ -1,1 +1,48 @@
 <!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Inicio de Sesión - SpeedLine Motors</title>
+        <link rel="stylesheet" href="estilos_proyecto.css">
+    </head>
+    <body>
+        <!-- Barra de navegación -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">SPEEDLINE MOTORS</div>
+                <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+                <ul id="menuList" class="nav-menu">
+                    <li><a href="Pagina_web_1.html">Inicio</a></li>
+                    <li><a href="motos.html">Motos</a></li>
+                    <li><a href="coches.html">Coches</a></li>
+                    <li><a href="sesión.html">Inicio de sesión</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="content">
+            <h1>Inicio de Sesión</h1>
+            <p>Accede a tu cuenta de SpeedLine Motors</p>
+            
+            <form class="login-form">
+                <h2>Inicia Sesión</h2>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Introduzca su email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="contraseña">Contraseña:</label>
+                    <input type="password" id="contraseña" name="contraseña" placeholder="Introduzca su contraseña" required>
+                </div>
+
+                <input type="submit" id="enviar" name="Enviar" value="Iniciar Sesión">
+                <input type="reset" id="borrar" name="Limpiar" value="Limpiar">
+            </form>
+        </div>
+        
+        <script src="Acompañante_java1.js"></script>
+        
+</body>
+</html>
