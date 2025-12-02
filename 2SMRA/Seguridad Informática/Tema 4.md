@@ -44,3 +44,38 @@ iptables que permita evitarlos, limitando a 5 el número máximo de conexiones a
 desde una determinada IP.
 **iptables -A INPUT -p tcp --dport 22 -m connlimit --connlimit-above 5 --connlimit-mask 32 -j DROP**
 ![[Pasted image 20251128102938.png]]
+
+
+
+
+
+
+
+IPTABLES 2
+Ejercicio 1. Configurar reglas para mitigar ataques de denegación de servicio (DoS) basados en  paquetes SYN.
+**iptables -A INPUT -p tcp --syn -m limit --limit 10/s --limit-burst 20 -j ACCEPT
+iptables -A INPUT -p tcp --syn -j DROP**
+![[Pasted image 20251202141500.png]]
+Ejercicio 2. Hacer que una máquina actúe como router y permita a una subred privada acceder a Internet.
+**echo 1 > /proc/sys/net/ipv4/ip_forward
+iptables -t nat -A POSTROUTING -s 192.168.1.0/24 -o eth0 -j MASQUERADE**
+![[Pasted image 20251202141604.png]]
+![[Pasted image 20251202141649.png]]
+Ejercicio 3. Usar el módulo string para filtrar tráfico basado en contenido (por ejemplo, bloquear solicitudes HTTP sospechosas).
+**iptables -A INPUT -p tcp --dport 80 -m string --string "/etc/passwd" --algo bm -j DROP**
+![[Pasted image 20251202141750.png]]
+Ejercicio 4. Limitar conexiones por IP usando el módulo hashlimit (más avanzado que limit).
+**iptables -A INPUT -p tcp --dport 22 -m hashlimit  --hashlimit 3/min --hashlimit-burst 5 --hashlimit-mode srcip  --hashlimit-name ssh_limit -j ACCEPT
+iptables -A INPUT -p tcp --dport 22 -j DROP**
+![[Pasted image 20251202142023.png]]
+Ejercicio 5. Distribuir tráfico entrante entre varios puertos internos (simulando balanceo).
+**iptables -t nat -A PREROUTING -p tcp --dport 80 -m statistic --mode nth --every 2 --packet 0 -j DNAT --to-destination 192.168.1.10:80
+iptables -t nat -A PREROUTING -p tcp --dport 80 -j DNAT --to-destination 192.168.1.11:80**
+![[Pasted image 20251202142451.png]]
+Ejercicio 6. Detectar y bloquear intentos de escaneo (como los de nmap)
+**iptables -A INPUT -p tcp --tcp-flags ALL NONE -j DROP
+iptables -A INPUT -p tcp --tcp-flags ALL ALL -j DROP
+iptables -A INPUT -p tcp --tcp-flags ALL FIN,PSH,URG -j DROP
+iptables -A INPUT -p tcp --tcp-flags SYN,RST SYN,RST -j DROP**
+![[Pasted image 20251202142710.png]]
+
