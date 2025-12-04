@@ -18,9 +18,7 @@ h1{
 h2{
     color: #94e3fd;
 }
-h3{
-   color: #FF6600;
-}
+/* Removed global h3 color to avoid targeting the video heading */
 
 .navbar {
     background: linear-gradient(180deg, rgba(30, 30, 30, 0.98) 0%, rgba(20, 20, 20, 0.98) 100%);
