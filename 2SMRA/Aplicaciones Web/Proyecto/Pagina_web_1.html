@@ -12,8 +12,23 @@
                 <div class="logo">SPEEDLINE MOTORS</div>
                 <button class="menu-toggle" onclick="toggleMenu()">☰</button>
                 <ul id="menu" class="menu">
-                    <li><a href="motos.html">Motos</a></li>
-                    <li><a href="coches.html">Coches</a></li>
+                    <li>
+                        <a href="motos.html">Motos</a>
+                        <ul class="submenu">
+                            <li><a href="#motos-precio">Precio</a></li>
+                            <li><a href="#motos-cv">CV</a></li>
+                            <li><a href="#motos-velocidad">Velocidad punta</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="coches.html">Coches</a>
+                        <ul class="submenu">
+                            <li><a href="#coches-precio">Precio</a></li>
+                            <li><a href="#coches-cv">CV</a></li>
+                            <li><a href="#coches-velocidad">Velocidad punta</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="sesión.html">Iniciar Sesión</a></li>
                 </ul>
             </div>
         </nav>
@@ -85,28 +100,7 @@
                 </audio>
             </section>
             
-            <section id="contacto">
-                <h2>Solicita Información</h2>
-                <form id="contactForm">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required>
-                    
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                    
-                    <label for="tipo">Tipo de Vehículo:</label>
-                    <select id="tipo" name="tipo" required>
-                        <option value="">Selecciona un tipo</option>
-                        <option value="moto">Moto</option>
-                        <option value="coche">Coche</option>
-                    </select>
-                    
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea id="mensaje" name="mensaje" rows="5"></textarea>
-                    
-                    <button type="submit">Enviar Solicitud</button>
-                </form>
-            </section>
+            <!-- Contact form removed per request -->
         </div>
         
         <script src="Acompañante_java1.js"></script>

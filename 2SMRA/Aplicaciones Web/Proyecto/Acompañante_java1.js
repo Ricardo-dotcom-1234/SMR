@@ -93,6 +93,12 @@ document.addEventListener("DOMContentLoaded", function() {
     // Mostrar cantidad de vehículos disponibles
     const disponibles = contarDisponibles();
     console.log("Vehículos disponibles: " + disponibles + " de " + modelos.length);
+
+    // Login form handler
+    const loginForm = document.getElementById('loginForm');
+    if (loginForm) {
+        loginForm.addEventListener('submit', handleLogin);
+    }
 });
 
 // Función para cambiar menú
@@ -100,5 +106,41 @@ function toggleMenu() {
     const menu = document.getElementById('menu');
     menu.classList.toggle('menu-collapsed');
     menu.classList.toggle('menu-expanded');
+}
+
+/* ======= Login handling (front-end simulation) ======= */
+// Simple users array (for demo only). Replace or remove for production.
+const usuarios = [
+    { email: 'admin@speedline.com', password: 'admin123', nombre: 'Administrador' },
+    { email: 'cliente@ejemplo.com', password: 'cliente123', nombre: 'Cliente' }
+];
+
+function handleLogin(event) {
+    event.preventDefault();
+    const email = document.getElementById('loginEmail').value.trim();
+    const password = document.getElementById('loginPassword').value;
+    const msg = document.getElementById('loginMessage');
+
+    if (!email || !password) {
+        if (msg) msg.textContent = 'Rellena email y contraseña.';
+        return;
+    }
+
+    const user = usuarios.find(u => u.email.toLowerCase() === email.toLowerCase() && u.password === password);
+    if (user) {
+        // Simulate login success
+        if (msg) {
+            msg.style.color = '#b6ffcc';
+            msg.textContent = '¡Bienvenido, ' + user.nombre + '! Redirigiendo...';
+        }
+        // Store simple session flag
+        try { localStorage.setItem('user', JSON.stringify({ email: user.email, nombre: user.nombre })); } catch(e){}
+        setTimeout(() => { window.location.href = 'Pagina_web_1.html'; }, 900);
+    } else {
+        if (msg) {
+            msg.style.color = '#ffbbbb';
+            msg.textContent = 'Email o contraseña incorrectos.';
+        }
+    }
 }
 
