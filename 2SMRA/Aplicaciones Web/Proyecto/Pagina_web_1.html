@@ -37,6 +37,76 @@
                 </video>
                 <p>Vehículos en acción. Potencia, velocidad y adrenalina.</p>
             </div>
+            
+            <section id="modelos-tabla">
+                <h2>Modelos Disponibles</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tipo</th>
+                            <th>Velocidad Máx.</th>
+                            <th>Potencia</th>
+                            <th>Disponibilidad</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Moto Deportiva</td>
+                            <td>300 km/h</td>
+                            <td>200 CV</td>
+                            <td>Disponible</td>
+                        </tr>
+                        <tr>
+                            <td>Coche Deportivo</td>
+                            <td>320 km/h</td>
+                            <td>650 CV</td>
+                            <td>Disponible</td>
+                        </tr>
+                        <tr>
+                            <td>SUV Premium</td>
+                            <td>280 km/h</td>
+                            <td>500 CV</td>
+                            <td>En pedido</td>
+                        </tr>
+                        <tr>
+                            <td>Moto Touring</td>
+                            <td>250 km/h</td>
+                            <td>150 CV</td>
+                            <td>Disponible</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            
+            <section id="sonido">
+                <h2>Escucha el sonido del motor</h2>
+                <audio controls>
+                    <source src="motor-sound.mp3" type="audio/mpeg">
+                </audio>
+            </section>
+            
+            <section id="contacto">
+                <h2>Solicita Información</h2>
+                <form id="contactForm">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="tipo">Tipo de Vehículo:</label>
+                    <select id="tipo" name="tipo" required>
+                        <option value="">Selecciona un tipo</option>
+                        <option value="moto">Moto</option>
+                        <option value="coche">Coche</option>
+                    </select>
+                    
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5"></textarea>
+                    
+                    <button type="submit">Enviar Solicitud</button>
+                </form>
+            </section>
         </div>
         
         <script src="Acompañante_java1.js"></script>
