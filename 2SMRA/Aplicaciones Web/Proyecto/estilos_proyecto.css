@@ -12,15 +12,17 @@ body {
     background: linear-gradient(135deg, rgba(0, 20, 40, 0.7) 0%, rgba(0, 50, 80, 0.7) 100%), url(buena2.jpg) no-repeat center center fixed;
     background-size: cover;
 }
-h1{
+
+h1 {
     color: #00BFFF;
 }
-h2{
+
+h2 {
     color: #94e3fd;
 }
-/* Removed global h3 color to avoid targeting the video heading */
 
-.navbar {
+/* Navegación */
+.nav {
     background: linear-gradient(180deg, rgba(30, 30, 30, 0.98) 0%, rgba(20, 20, 20, 0.98) 100%);
     position: fixed;
     top: 0;
@@ -30,7 +32,6 @@ h2{
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
 
-/* Pseudoclases */
 a:hover {
     text-decoration: underline;
 }
@@ -44,7 +45,7 @@ a:focus {
     outline-offset: 2px;
 }
 
-.container {
+.contenedor {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -61,21 +62,6 @@ a:focus {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.menu-toggle {
-    display: none;
-    background: linear-gradient(135deg, #00d4ff 0%, #0099cc 100%);
-    color: white;
-    border: none;
-    padding: 8px 12px;
-    cursor: pointer;
-    font-size: 18px;
-    border-radius: 3px;
-}
-
-.menu-toggle:hover {
-    background: linear-gradient(135deg, #00e5ff 0%, #00b3e5 100%);
-}
-
 .menu {
     display: flex;
     list-style: none;
@@ -87,6 +73,7 @@ a:focus {
 
 .menu li {
     border-right: 1px solid rgba(0, 212, 255, 0.2);
+    position: relative;
 }
 
 .menu li:last-child {
@@ -119,12 +106,7 @@ a:focus {
     color: rgb(0, 0, 0);
 }
 
-/* Menú desplegable con categorías */
-.menu li {
-    border-right: 1px solid rgba(0, 212, 255, 0.2);
-    position: relative;
-}
-
+/* Submenú */
 .submenu {
     display: none;
     position: absolute;
@@ -162,29 +144,25 @@ a:focus {
     box-shadow: none;
 }
 
-/* Contenido principal */
-.content {
+/* Contenido */
+.contenido {
     margin-top: 60px;
     padding: 40px 20px;
     text-align: center;
 }
 
-.content h1 {
+.contenido h1 {
     font-size: 36px;
     margin-bottom: 20px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-.content p {
+.contenido p {
     font-size: 16px;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
-.tagline {
-    margin-top: 20px;
-    color: #00BFFF;
-}
 
-.value-proposition {
+.propuesta {
     background: rgba(0, 20, 40, 0.8);
     border: 2px solid #00d4ff;
     border-radius: 8px;
@@ -195,20 +173,14 @@ a:focus {
     margin-right: auto;
 }
 
-.value-proposition h2 {
-    color: #00d4ff;
-    font-size: 24px;
-    margin-bottom: 15px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-}
-
-.value-proposition p {
+.propuesta p {
     color: #ffffff;
     font-size: 15px;
     line-height: 1.6;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
 
+/* Video */
 .video-section {
     margin-top: 60px;
     padding: 40px 20px;
@@ -237,8 +209,8 @@ a:focus {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
 
-/* Secciones de productos */
-.products-section {
+/* Productos */
+.productos {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
@@ -247,7 +219,7 @@ a:focus {
     margin: 0 auto;
 }
 
-.product-card {
+.tarjeta {
     background: rgba(0, 20, 40, 0.85);
     border: 2px solid #00d4ff;
     border-radius: 8px;
@@ -258,27 +230,27 @@ a:focus {
     flex-direction: column;
 }
 
-.product-card:hover {
+.tarjeta:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 24px rgba(0, 212, 255, 0.4);
     border-color: #00e5ff;
 }
 
-.product-card img {
+.tarjeta img {
     width: 100%;
     aspect-ratio: 1;
     object-fit: cover;
     display: block;
 }
 
-.product-card h3 {
+.tarjeta h3 {
     color: #FF6600;
     font-size: 20px;
     padding: 20px 20px 10px 20px;
     margin: 0;
 }
 
-.product-card p {
+.tarjeta p {
     color: #ffffff;
     font-size: 14px;
     padding: 0 20px 20px 20px;
@@ -323,7 +295,7 @@ table tr:hover {
     background-color: rgba(0, 212, 255, 0.1);
 }
 
-/* Formulario */
+/* Formularios */
 form {
     background: rgba(0, 20, 40, 0.85);
     border: 2px solid #00d4ff;
@@ -378,8 +350,8 @@ form button:hover {
     transform: translateY(-2px);
 }
 
-/* Login form styles */
-.login-form {
+/* Login */
+.formulario-login {
     background: rgba(0, 20, 40, 0.95);
     padding: 30px;
     border-radius: 8px;
@@ -389,25 +361,25 @@ form button:hover {
     box-shadow: 0 8px 24px rgba(0, 212, 255, 0.15);
 }
 
-.login-form h2 {
+.formulario-login h2 {
     color: #00d4ff;
     text-align: center;
     margin-bottom: 12px;
 }
 
-.login-form .form-group {
+.grupo-formulario {
     margin-bottom: 14px;
 }
 
-.login-form label {
+.formulario-login label {
     color: #ffffff;
     font-weight: bold;
     margin-bottom: 6px;
     display: block;
 }
 
-.login-form input[type="email"],
-.login-form input[type="password"] {
+.formulario-login input[type="email"],
+.formulario-login input[type="password"] {
     width: 100%;
     padding: 10px;
     border: 1px solid #00d4ff;
@@ -416,7 +388,7 @@ form button:hover {
     color: #fff;
 }
 
-.login-form button[type="submit"] {
+.formulario-login button[type="submit"] {
     width: 100%;
     padding: 12px;
     background: linear-gradient(135deg,#00d4ff 0%,#0099cc 100%);
@@ -427,8 +399,14 @@ form button:hover {
     cursor: pointer;
 }
 
-.login-form button[type="submit"]:hover {
+.formulario-login button[type="submit"]:hover {
     background: linear-gradient(135deg,#00e5ff 0%,#00b3e5 100%);
+}
+
+/* Mensaje de login */
+.mensaje-login {
+    color: #ffdddd;
+    margin-bottom: 12px;
 }
 
 /* Audio */
