@@ -3,11 +3,11 @@ filter para empezar desde cero.
 **iptables -F**
 2. Políticas por defecto: Configura el firewall para que sea restrictivo: DROP para todo lo
 que entra ( INPUT ) y ACCEPT para todo lo que sale ( OUTPUT ).
-iptables -P INPUT DROP
-iptables -P OUTPUR ACCEPT
+**iptables -P INPUT DROP**
+**iptables -P OUTPUR ACCEPT**
 3. Tráfico local: Permite todo el tráfico en la interfaz de loopback ( lo ) para que el sistema
 no falle consigo mismo.
-iptables -A INPUT -i lo -j ACCEPT
+**iptables -A INPUT -i lo -j ACCEPT**
 4. Conexiones activas: Permite el tráfico entrante que corresponda a conexiones que ya
 han sido establecidas o están relacionadas (ESTABLISHED, RELATED), para no
 cortar tu propia sesión ni las respuestas de internet.
@@ -25,6 +25,6 @@ tráfico proveniente de esa IP.
 8. NAT (Masquerading): Habilita el enmascaramiento para que los empleados conectados
 a la interfaz eth0 (LAN) puedan salir a Internet a través de la interfaz wlan0 (WAN)
 
-iptables -t nat -A POSTROUTING -o wlan0 -j MASQUERADE
-iptables -A FORWARD -i wlan0 -o eth0 -j ACCEPT
-iptables -A FORWARD -i eth0 -o wlan0 -j ACCEPT
+**iptables -t nat -A POSTROUTING -o wlan0 -j MASQUERADE**
+**iptables -A FORWARD -i wlan0 -o eth0 -j ACCEPT**
+**iptables -A FORWARD -i eth0 -o wlan0 -j ACCEPT**
