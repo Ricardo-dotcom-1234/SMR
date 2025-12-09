@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <meta charset="UTF-8">
-        <title>Inicio de Sesión - SpeedLine Motors</title>
-        <link rel="stylesheet" href="estilos_proyecto.css">
+        <meta charset="UTF-8"> <!-- español -->
+        <title>Inicio de Sesión - SpeedLine Motors</title> <!-- título pestaña -->
+        <link rel="stylesheet" href="estilos_proyecto.css"> <!-- estilos -->
     </head>
     <body>
-        <!-- Navegación -->
-        <nav class="nav">
+        <!-- Navegación: menú superior -->
+        <nav class="nav"> <!-- barra de navegación -->
             <div class="contenedor">
-                <div class="logo">SPEEDLINE MOTORS</div>
-                <ul id="menu" class="menu">
+                <div class="logo">SPEEDLINE MOTORS</div> <!-- logo -->
+                <ul id="menu" class="menu"> <!-- opciones del menú -->
                     <li><a href="Pagina_web_1.html">Inicio</a></li>
                     <li><a href="motos.html">Motos</a></li>
                     <li><a href="coches.html">Coches</a></li>
@@ -18,29 +18,35 @@
             </div>
         </nav>
 
-        <div class="contenido">
-            <h1>Login</h1>
-            <p>Accede a tu cuenta de SpeedLine Motors</p>
+        <!-- Contenido: formulario de login -->
+        <div class="contenido"> <!-- área central -->
+            <h1>Login</h1> <!-- título -->
+            <p>Accede a tu cuenta de SpeedLine Motors</p> <!-- instrucción -->
             
-            <form id="loginForm" class="formulario-login">
-                <h2>Inicia Sesión</h2>
-                <div id="loginMessage" class="mensaje-login"></div>
-                <div class="grupo-formulario">
-                    <label for="loginEmail">Email:</label>
-                    <input type="email" id="loginEmail" name="loginEmail" placeholder="tu@ejemplo.com" required>
+            <!-- Formulario para iniciar sesión -->
+            <form id="loginForm" class="formulario-login"> <!-- formulario con estilos -->
+                <h2>Inicia Sesión</h2> <!-- encabezado del formulario -->
+                <div id="loginMessage" class="mensaje-login"></div> <!-- espacio para mensajes de error/éxito -->
+                
+                <!-- Campo de email -->
+                <div class="grupo-formulario"> <!-- grupo de campo -->
+                    <label for="loginEmail">Email:</label> <!-- etiqueta -->
+                    <input type="email" id="loginEmail" name="loginEmail" placeholder="tu@ejemplo.com" required> <!-- campo de entrada email -->
                 </div>
 
-                <div class="grupo-formulario">
-                    <label for="loginPassword">Contraseña:</label>
-                    <input type="password" id="loginPassword" name="loginPassword" placeholder="Contraseña" required>
+                <!-- Campo de contraseña -->
+                <div class="grupo-formulario"> <!-- grupo de campo -->
+                    <label for="loginPassword">Contraseña:</label> <!-- etiqueta -->
+                    <input type="password" id="loginPassword" name="loginPassword" placeholder="Contraseña" required> <!-- campo de entrada contraseña -->
                 </div>
 
-                <button type="submit" id="loginSubmit">Iniciar Sesión</button>
-                <input type="reset" id="loginReset" value="Limpiar">
+                <!-- Botones -->
+                <button type="submit" id="loginSubmit">Iniciar Sesión</button> <!-- envía el formulario -->
+                <input type="reset" id="loginReset" value="Limpiar"> <!-- limpia los campos -->
             </form>
         </div>
         
-        <script src="Acompañante_java1.js"></script>
+        <script src="Acompañante_java1.js"></script> <!-- panel de herramientas -->
         
 </body>
 </html>

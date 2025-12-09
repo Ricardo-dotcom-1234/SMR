@@ -1,64 +1,67 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <meta charset="UTF-8">
-        <title>SpeedLine Motors</title>
-        <link rel="stylesheet" href="estilos_proyecto.css">
+        <meta charset="UTF-8"> <!-- idioma español y caracteres especiales -->
+        <title>SpeedLine Motors</title> <!-- nombre de la página en la pestaña -->
+        <link rel="stylesheet" href="estilos_proyecto.css"> <!-- conecta con los estilos CSS -->
     </head>
     <body>
-        <!-- Navegación -->
-        <nav class="nav">
-            <div class="contenedor">
-                <div class="logo">SPEEDLINE MOTORS</div>
-                <ul id="menu" class="menu">
+        <!-- Navegación: barra de menú fija arriba -->
+        <nav class="nav"> <!-- barra superior con logo y opciones -->
+            <div class="contenedor"> <!-- agrupa logo y menú -->
+                <div class="logo">SPEEDLINE MOTORS</div> <!-- logo del sitio -->
+                <ul id="menu" class="menu"> <!-- menú principal -->
                     <li>
-                        <a href="motos.html">Motos</a>
-                        <ul class="submenu">
-                            <li><a href="Precio.html">Precio</a></li>
+                        <a href="motos.html">Motos</a> <!-- enlace a página de motos -->
+                        <ul class="submenu"> <!-- menú desplegable -->
+                            <li><a href="Precio.html">Precio</a></li> <!-- opción de precios -->
                         </ul>
                     </li>
                     <li>
-                        <a href="coches.html">Coches</a>
-                        <ul class="submenu">
-                            <li><a href="Precio.html">Precio</a></li>
+                        <a href="coches.html">Coches</a> <!-- enlace a página de coches -->
+                        <ul class="submenu"> <!-- menú desplegable -->
+                            <li><a href="Precio.html">Precio</a></li> <!-- opción de precios -->
                         </ul>
                     </li>
-                    <li><a href="sesión.html">Login</a></li>
+                    <li><a href="sesión.html">Login</a></li> <!-- enlace para acceder con usuario -->
                 </ul>
             </div>
         </nav>
 
-        <div class="contenido">
-            <h1>Bienvenido a SpeedLine Motors</h1>
-            <p id="grax"></p>
+        <!-- Contenido principal de la página -->
+        <div class="contenido"> <!-- área central -->
+            <h1>Bienvenido a SpeedLine Motors</h1> <!-- título grande -->
+            <p id="grax"></p> <!-- espacio vacío para mensajes -->
             
-            <div class="eslogan">
-                <h2>Donde la velocidad se encuentra con la perfección</h2>
+            <div class="eslogan"> <!-- sección del lema -->
+                <h2>Donde la velocidad se encuentra con la perfección</h2> <!-- frase descriptiva -->
             </div>
             
-            <div class="propuesta">
-                <p>Especialistas en vehículos de alto rendimiento. Conectamos a los amantes de la velocidad con las mejores máquinas del mercado, asesoramiento personalizado y garantía de excelencia.</p>
+            <div class="propuesta"> <!-- caja con texto importante -->
+                <p>Especialistas en vehículos de alto rendimiento. Conectamos a los amantes de la velocidad con las mejores máquinas del mercado, asesoramiento personalizado y garantía de excelencia.</p> <!-- descripción de la empresa -->
             </div>
             
-            <div class="video-section">
-                <video controls autoplay muted>
-                    <source src="Best of Drift Cars at Festival of Speed 2019_ 2JZ Supra MK5, Mad Mike' Lamborghini, GT86 Ferrari V8 720p50.mp4" type="video/mp4">
+            <!-- Sección de video -->
+            <div class="video-section"> <!-- caja para video centrado -->
+                <video controls autoplay muted> <!-- video que se reproduce solo sin sonido -->
+                    <source src="Best of Drift Cars at Festival of Speed 2019_ 2JZ Supra MK5, Mad Mike' Lamborghini, GT86 Ferrari V8 720p50.mp4" type="video/mp4"> <!-- fuente del video -->
                 </video>
-                <p>Vehículos en acción. Potencia, velocidad y adrenalina.</p>
+                <p>Vehículos en acción. Potencia, velocidad y adrenalina.</p> <!-- descripción del video -->
             </div>
             
-            <section id="tabla">
-                <h2>Modelos Disponibles</h2>
-                <table>
-                    <thead>
+            <!-- Tabla de modelos -->
+            <section id="tabla"> <!-- sección con tabla -->
+                <h2>Modelos Disponibles</h2> <!-- encabezado de la tabla -->
+                <table> <!-- tabla de datos -->
+                    <thead> <!-- encabezados de la tabla -->
                         <tr>
-                            <th>Tipo</th>
-                            <th>Velocidad Máx.</th>
-                            <th>Potencia</th>
-                            <th>Disponibilidad</th>
+                            <th>Tipo</th> <!-- columna: tipo de vehículo -->
+                            <th>Velocidad Máx.</th> <!-- columna: velocidad máxima -->
+                            <th>Potencia</th> <!-- columna: potencia del motor -->
+                            <th>Disponibilidad</th> <!-- columna: si está disponible -->
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody> <!-- cuerpo de la tabla con datos -->
                         <tr>
                             <td>Moto Deportiva</td>
                             <td>300 km/h</td>
@@ -87,13 +90,15 @@
                 </table>
             </section>
             
-            <section id="audio">
-                <h2>Escucha el sonido del motor</h2>
-                <audio controls>
-                    <source src="Supercar Engine Revving - Sound Effect for editing - Sound Library.mp3" type="audio/mp3">
+            <!-- Sección de audio -->
+            <section id="audio"> <!-- sección con reproductor de sonido -->
+                <h2>Escucha el sonido del motor</h2> <!-- encabezado -->
+                <audio controls> <!-- reproductor de audio con botones -->
+                    <source src="Supercar Engine Revving - Sound Effect for editing - Sound Library.mp3" type="audio/mp3"> <!-- archivo de sonido -->
                 </audio>
             </section>
         </div>
-        <script src="Acompañante_java1.js"></script>
+        
+        <script src="Acompañante_java1.js"></script> <!-- carga panel de herramientas -->
     </body>
 </html>

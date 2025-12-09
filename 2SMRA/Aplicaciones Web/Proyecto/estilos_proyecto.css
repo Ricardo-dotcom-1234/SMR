@@ -1,631 +1,641 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0; /* elimina el espacio exterior de todos los elementos */
+    padding: 0; /* elimina el espacio interior de todos los elementos */
+    box-sizing: border-box; /* incluye el borde y el relleno en el ancho/alto total */
 }
 
 body {
-    background: url(buena2.jpg) no-repeat center center fixed;
-    background-size: cover;
-    color: rgb(255, 255, 255);
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, rgba(0, 20, 40, 0.7) 0%, rgba(0, 50, 80, 0.7) 100%), url(buena2.jpg) no-repeat center center fixed;
-    background-size: cover;
+    background: url(buena2.jpg) no-repeat center center fixed; /* imagen de fondo sin repetición, centrada y fija */
+    background-size: cover; /* la imagen se ajusta para cubrir todo el área */
+    color: rgb(255, 255, 255); /* texto blanco */
+    font-family: Arial, sans-serif; /* tipo de letra Arial, o cualquier sans-serif si no está disponible */
+    background: linear-gradient(135deg, rgba(0, 20, 40, 0.7) 0%, rgba(0, 50, 80, 0.7) 100%), url(buena2.jpg) no-repeat center center fixed; /* degradado azul oscuro semitransparente sobre la imagen */
+    background-size: cover; /* escala la imagen y el degradado para cubrir todo */
 }
 
 h1 {
-    color: #00BFFF;
+    color: #00BFFF; /* títulos principales en azul brillante */
 }
 
 h2 {
-    color: #94e3fd;
+    color: #94e3fd; /* subtítulos en azul claro pálido */
 }
 
-/* Navegación */
+/* Navegación: barra fija en la parte superior */
 .nav {
-    background: linear-gradient(180deg, rgba(30, 30, 30, 0.98) 0%, rgba(20, 20, 20, 0.98) 100%);
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(180deg, rgba(30, 30, 30, 0.98) 0%, rgba(20, 20, 20, 0.98) 100%); /* degradado gris oscuro de arriba a abajo */
+    position: fixed; /* se queda en el mismo lugar al desplazar */
+    top: 0; /* comienza en la parte superior */
+    left: 0; /* comienza en el lado izquierdo */
+    right: 0; /* se extiende hasta el lado derecho */
+    z-index: 1000; /* encima de otros elementos */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5); /* sombra suave debajo */
 }
 
+/* Enlaces: cambios al pasar el ratón y al visitarlos */
 a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* subraya el texto cuando pasas el ratón */
 }
 
 a:visited {
-    color: #00b3e5;
+    color: #00b3e5; /* color del enlace ya visitado (azul claro) */
 }
 
 a:focus {
-    outline: 2px solid #00d4ff;
-    outline-offset: 2px;
+    outline: 2px solid #00d4ff; /* borde azul cuando se enfoca con teclado */
+    outline-offset: 2px; /* espacio entre el texto y el borde */
 }
 
+/* Contenedor: agrupa logo y menú */
 .contenedor {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-    max-width: 100%;
+    display: flex; /* distribuye elementos en fila */
+    align-items: center; /* alinea verticalmente al centro */
+    justify-content: space-between; /* distribuye a los lados */
+    padding: 0 20px; /* espaciado a los lados */
+    max-width: 100%; /* ancho máximo disponible */
 }
 
+/* Logo: texto visible en la barra */
 .logo {
-    color: #00d4ff;
-    font-weight: bold;
-    font-size: 16px;
-    letter-spacing: 2px;
-    padding: 12px 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #00d4ff; /* color azul claro */
+    font-weight: bold; /* texto grueso */
+    font-size: 16px; /* tamaño del texto */
+    letter-spacing: 2px; /* espaciado entre letras */
+    padding: 12px 0; /* espaciado arriba y abajo */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* tipo de letra moderno */
 }
 
+/* Menú: opciones en fila horizontal */
 .menu {
-    display: flex;
-    list-style: none;
-    gap: 0;
-    margin: 0;
-    padding: 0;
-    height: 45px;
+    display: flex; /* distribuye en fila */
+    list-style: none; /* sin puntos de lista */
+    gap: 0; /* sin espacio entre opciones */
+    margin: 0; /* sin margen */
+    padding: 0; /* sin relleno */
+    height: 45px; /* altura fija de la barra */
 }
 
+/* Elemento del menú: cada opción */
 .menu li {
-    border-right: 1px solid rgba(0, 212, 255, 0.2);
-    position: relative;
+    border-right: 1px solid rgba(0, 212, 255, 0.2); /* línea vertical azul clara entre opciones */
+    position: relative; /* necesario para el submenú */
 }
 
 .menu li:last-child {
-    border-right: none;
+    border-right: none; /* la última opción no tiene línea */
 }
 
+/* Enlace del menú: estilo del texto */
 .menu a {
-    display: block;
-    padding: 12px 18px;
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 13px;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    letter-spacing: 1px;
+    display: block; /* ocupa todo el espacio disponible */
+    padding: 12px 18px; /* espaciado dentro */
+    color: #ffffff; /* texto blanco */
+    text-decoration: none; /* sin subrayado */
+    font-size: 13px; /* tamaño pequeño */
+    font-weight: 500; /* texto semi-grueso */
+    transition: all 0.3s ease; /* cambios suaves en 0.3 segundos */
+    height: 100%; /* ocupa toda la altura */
+    display: flex; /* distribuye contenido */
+    align-items: center; /* centra verticalmente */
+    letter-spacing: 1px; /* espaciado entre letras */
 }
 
+/* Menú al pasar el ratón: efecto visual */
 .menu a:hover {
-    background-color: rgba(0, 212, 255, 0.8);
-    color: #000000;
-    box-shadow: 0 4px 8px rgba(0, 212, 255, 0.4) inset;
-    transform: scale(1.05);
+    background-color: rgba(0, 212, 255, 0.8); /* fondo azul claro */
+    color: #000000; /* texto negro */
+    box-shadow: 0 4px 8px rgba(0, 212, 255, 0.4) inset; /* sombra interna azul */
+    transform: scale(1.05); /* crece un 5% */
 }
 
 .menu a:active {
-    background-color: #00d4ff;
-    color: rgb(0, 0, 0);
+    background-color: #00d4ff; /* fondo azul brillante cuando se presiona */
+    color: rgb(0, 0, 0); /* texto negro */
 }
 
-/* Submenú */
+/* Submenú: opciones desplegables ocultas por defecto */
 .submenu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background: linear-gradient(180deg, rgba(30, 30, 30, 0.98) 0%, rgba(20, 20, 20, 0.98) 100%);
-    flex-direction: column;
-    width: 180px;
-    border: 1px solid rgba(0, 212, 255, 0.3);
-    border-radius: 4px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    display: none; /* oculto inicialmente */
+    position: absolute; /* se posiciona relativo al padre */
+    top: 100%; /* comienza bajo la opción principal */
+    left: 0; /* alineado a la izquierda */
+    background: linear-gradient(180deg, rgba(30, 30, 30, 0.98) 0%, rgba(20, 20, 20, 0.98) 100%); /* mismo degradado que nav */
+    flex-direction: column; /* elementos apilados verticalmente */
+    width: 180px; /* ancho fijo */
+    border: 1px solid rgba(0, 212, 255, 0.3); /* borde azul tenue */
+    border-radius: 4px; /* esquinas ligeramente redondeadas */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* sombra */
 }
 
 .menu li:hover .submenu {
-    display: flex;
+    display: flex; /* muestra el submenú al pasar el ratón */
 }
 
 .submenu li {
-    border-right: none;
-    border-bottom: 1px solid rgba(0, 212, 255, 0.2);
+    border-right: none; /* sin borde vertical */
+    border-bottom: 1px solid rgba(0, 212, 255, 0.2); /* línea horizontal entre opciones */
 }
 
 .submenu li:last-child {
-    border-bottom: none;
+    border-bottom: none; /* la última opción no tiene línea */
 }
 
 .submenu a {
-    padding: 12px 18px;
-    font-size: 12px;
+    padding: 12px 18px; /* espaciado dentro */
+    font-size: 12px; /* texto pequeño */
 }
 
 .submenu a:hover {
-    background-color: rgba(0, 212, 255, 0.6);
-    transform: none;
-    box-shadow: none;
+    background-color: rgba(0, 212, 255, 0.6); /* fondo azul más opaco */
+    transform: none; /* sin transformación */
+    box-shadow: none; /* sin sombra */
 }
 
-/* Contenido */
+/* Contenido: área principal de la página */
 .contenido {
-    margin-top: 60px;
-    padding: 40px 20px;
-    text-align: center;
+    margin-top: 60px; /* espacio para la barra navegación */
+    padding: 40px 20px; /* espaciado interno */
+    text-align: center; /* texto centrado */
 }
 
 .contenido h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-size: 36px; /* título grande */
+    margin-bottom: 20px; /* espacio abajo */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* sombra del texto */
 }
 
 .contenido p {
-    font-size: 16px;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    font-size: 16px; /* tamaño normal */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* sombra del texto */
 }
 
+/* Propuesta: caja destacada con información */
 .propuesta {
-    background: rgba(0, 20, 40, 0.8);
-    border: 2px solid #00d4ff;
-    border-radius: 8px;
-    padding: 30px;
-    margin-top: 40px;
-    max-width: 600px;
-    margin-left: auto;
+    background: rgba(0, 20, 40, 0.8); /* fondo azul oscuro semitransparente */
+    border: 2px solid #00d4ff; /* borde azul */
+    border-radius: 8px; /* esquinas redondeadas */
+    padding: 30px; /* espaciado interno */
+    margin-top: 40px; /* espacio arriba */
+    max-width: 600px; /* ancho máximo */
+    margin-left: auto; /* centra horizontalmente */
     margin-right: auto;
 }
 
 .propuesta p {
-    color: #ffffff;
-    font-size: 15px;
-    line-height: 1.6;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    color: #ffffff; /* texto blanco */
+    font-size: 15px; /* tamaño normal */
+    line-height: 1.6; /* espaciado entre líneas */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* sombra */
 }
 
-/* Estilos movidos desde Precio.html (clases para .propuesta) */
+/* Clase para texto menos visible (más claro) */
 .propuesta .muted {
-    margin-top: 12px;
-    font-size: 14px;
-    color: #cfeefc;
+    margin-top: 12px; /* espacio arriba */
+    font-size: 14px; /* texto pequeño */
+    color: #cfeefc; /* azul claro pálido */
 }
 
 .propuesta .return {
-    margin-top: 16px;
+    margin-top: 16px; /* espacio arriba */
 }
 
-/* enlace de retorno con el mismo estilo visual usado en el proyecto */
 .propuesta .link-return {
-    color: #00d4ff;
-    text-decoration: underline;
+    color: #00d4ff; /* azul claro */
+    text-decoration: underline; /* subrayado */
 }
 
-/* Video */
+/* Video: sección con video centrado */
 .video-section {
-    margin-top: 60px;
-    padding: 40px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* centra video y texto dentro de la sección */
-    justify-content: center;
-    gap: 16px;
-    text-align: center;
-    position: relative;
+    margin-top: 60px; /* espacio arriba */
+    padding: 40px 20px; /* espaciado interno */
+    display: flex; /* distribuye verticalmente */
+    flex-direction: column; /* elementos apilados */
+    align-items: center; /* centra horizontalmente */
+    justify-content: center; /* centra verticalmente */
+    gap: 16px; /* espacio entre video y texto */
+    text-align: center; /* texto centrado */
+    position: relative; /* necesario para posicionamiento */
 }
 
 .video-section video {
-    width: 100%;
-    max-width: 800px; /* mayor tamaño pero controlado */
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    border-radius: 8px;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.6);
+    width: 100%; /* ancho completo */
+    max-width: 800px; /* pero no más de 800px */
+    height: auto; /* altura proporcional */
+    display: block; /* en su propia línea */
+    margin: 0 auto; /* centrado horizontalmente */
+    border-radius: 8px; /* esquinas redondeadas */
+    box-shadow: 0 8px 24px rgba(0,0,0,0.6); /* sombra */
 }
 
-/* Texto de la sección debajo del video */
 .video-section p {
-    margin-top: 8px;
-    color: #ffffff;
-    font-size: 16px;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    margin-top: 8px; /* espacio arriba */
+    color: #ffffff; /* texto blanco */
+    font-size: 16px; /* tamaño normal */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* sombra */
 }
 
-/* Audio: más pequeño y centrado */
+/* Audio: reproductor de sonido centrado y pequeño */
 #audio {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    padding: 12px 0 28px;
+    display: flex; /* distribuye verticalmente */
+    flex-direction: column; /* elementos apilados */
+    align-items: center; /* centra horizontalmente */
+    justify-content: center; /* centra verticalmente */
+    gap: 8px; /* espacio pequeño */
+    padding: 12px 0 28px; /* espaciado */
 }
 
 #audio audio,
 .audio-player,
 audio {
-    width: 100%;
-    max-width: 320px; /* tamaño reducido */
+    width: 100%; /* ancho completo */
+    max-width: 320px; /* pero pequeño (320px máximo) */
     margin: 8px auto; /* centrado */
-    display: block;
-    box-sizing: border-box;
-    border-radius: 8px;
-    background: rgba(0,0,0,0.34); /* sutil fondo para destacar sobre la imagen */
-    padding: 6px; /* evita que el control quede pegado al borde */
-    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
-    position: relative;
+    display: block; /* en su propia línea */
+    box-sizing: border-box; /* incluye borde en el ancho */
+    border-radius: 8px; /* esquinas redondeadas */
+    background: rgba(0,0,0,0.34); /* fondo oscuro */
+    padding: 6px; /* espaciado interno */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5); /* sombra */
+    position: relative; /* necesario para posicionamiento */
 }
 
-/* Productos */
+/* Productos: tarjetas en cuadrícula */
 .productos {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-    padding: 60px 40px;
-    max-width: 1200px;
-    margin: 0 auto;
+    display: grid; /* distribuye en cuadrícula */
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas de igual tamaño */
+    gap: 30px; /* espacio entre tarjetas */
+    padding: 60px 40px; /* espaciado interno */
+    max-width: 1200px; /* ancho máximo */
+    margin: 0 auto; /* centrado */
 }
 
+/* Tarjeta individual: caja de producto */
 .tarjeta {
-    background: rgba(0, 20, 40, 0.85);
-    border: 2px solid #00d4ff;
-    border-radius: 8px;
-    overflow: hidden;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-    display: flex;
-    flex-direction: column;
+    background: rgba(0, 20, 40, 0.85); /* fondo azul oscuro */
+    border: 2px solid #00d4ff; /* borde azul */
+    border-radius: 8px; /* esquinas redondeadas */
+    overflow: hidden; /* oculta lo que sale del borde */
+    transition: all 0.3s ease; /* cambios suaves */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* sombra */
+    display: flex; /* distribuye verticalmente */
+    flex-direction: column; /* elementos apilados */
 }
 
 .tarjeta:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 24px rgba(0, 212, 255, 0.4);
-    border-color: #00e5ff;
+    transform: translateY(-10px); /* sube 10px al pasar el ratón */
+    box-shadow: 0 8px 24px rgba(0, 212, 255, 0.4); /* sombra más grande */
+    border-color: #00e5ff; /* borde más claro */
 }
 
 .tarjeta img {
-    width: 100%;
-    aspect-ratio: 1;
-    object-fit: cover;
-    display: block;
+    width: 100%; /* ancho completo */
+    aspect-ratio: 1; /* forma cuadrada */
+    object-fit: cover; /* recorta la imagen para llenar */
+    display: block; /* en su propia línea */
 }
 
 .tarjeta h3 {
-    color: #FF6600;
-    font-size: 20px;
-    padding: 20px 20px 10px 20px;
-    margin: 0;
+    color: #FF6600; /* naranja */
+    font-size: 20px; /* tamaño grande */
+    padding: 20px 20px 10px 20px; /* espaciado */
+    margin: 0; /* sin margen */
 }
 
 .tarjeta p {
-    color: #ffffff;
-    font-size: 14px;
-    padding: 0 20px 20px 20px;
-    margin: 0;
-    line-height: 1.5;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    color: #ffffff; /* texto blanco */
+    font-size: 14px; /* pequeño */
+    padding: 0 20px 20px 20px; /* espaciado */
+    margin: 0; /* sin margen */
+    line-height: 1.5; /* espaciado entre líneas */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* sombra */
 }
 
-/* Tabla */
+/* Tabla: datos en filas y columnas */
 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 40px auto;
-    max-width: 800px;
-    background: rgba(0, 20, 40, 0.85);
-    border: 2px solid #00d4ff;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    width: 100%; /* ancho completo */
+    border-collapse: collapse; /* sin espacios entre celdas */
+    margin: 40px auto; /* centrado con espacio arriba/abajo */
+    max-width: 800px; /* ancho máximo */
+    background: rgba(0, 20, 40, 0.85); /* fondo azul oscuro */
+    border: 2px solid #00d4ff; /* borde azul */
+    border-radius: 8px; /* esquinas redondeadas */
+    overflow: hidden; /* oculta lo que sale del borde */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* sombra */
 }
 
 table thead {
-    background: linear-gradient(135deg, #00d4ff 0%, #0099cc 100%);
-    position: sticky;
-    top: 60px;
+    background: linear-gradient(135deg, #00d4ff 0%, #0099cc 100%); /* degradado azul */
+    position: sticky; /* se queda arriba al desplazar */
+    top: 60px; /* comienza bajo la barra */
 }
 
 table th {
-    padding: 15px;
-    text-align: left;
-    color: #000000;
-    font-weight: bold;
+    padding: 15px; /* espaciado interno */
+    text-align: left; /* alineado a la izquierda */
+    color: #000000; /* texto negro */
+    font-weight: bold; /* texto grueso */
 }
 
 table td {
-    padding: 12px 15px;
-    border-bottom: 1px solid rgba(0, 212, 255, 0.2);
-    color: #ffffff;
+    padding: 12px 15px; /* espaciado interno */
+    border-bottom: 1px solid rgba(0, 212, 255, 0.2); /* línea entre filas */
+    color: #ffffff; /* texto blanco */
 }
 
 table tr:hover {
-    background-color: rgba(0, 212, 255, 0.1);
+    background-color: rgba(0, 212, 255, 0.1); /* fondo azul muy claro */
 }
 
-/* Formularios */
+/* Formularios: cajas de entrada */
 form {
-    background: rgba(0, 20, 40, 0.85);
-    border: 2px solid #00d4ff;
-    border-radius: 8px;
-    padding: 30px;
-    margin: 40px auto;
-    max-width: 500px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    background: rgba(0, 20, 40, 0.85); /* fondo azul oscuro */
+    border: 2px solid #00d4ff; /* borde azul */
+    border-radius: 8px; /* esquinas redondeadas */
+    padding: 30px; /* espaciado interno */
+    margin: 40px auto; /* centrado con espacio */
+    max-width: 500px; /* ancho máximo */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* sombra */
 }
 
 form label {
-    display: block;
-    margin-bottom: 8px;
-    color: #00d4ff;
-    font-weight: bold;
+    display: block; /* en su propia línea */
+    margin-bottom: 8px; /* espacio abajo */
+    color: #00d4ff; /* azul claro */
+    font-weight: bold; /* texto grueso */
 }
 
 form input,
 form textarea,
 form select {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 20px;
-    border: 1px solid #00d4ff;
-    border-radius: 4px;
-    background: rgba(255, 255, 255, 0.05);
-    color: #ffffff;
-    box-sizing: border-box;
+    width: 100%; /* ancho completo */
+    padding: 12px; /* espaciado interno */
+    margin-bottom: 20px; /* espacio abajo */
+    border: 1px solid #00d4ff; /* borde azul fino */
+    border-radius: 4px; /* esquinas ligeramente redondeadas */
+    background: rgba(255, 255, 255, 0.05); /* fondo muy claro */
+    color: #ffffff; /* texto blanco */
+    box-sizing: border-box; /* incluye borde en el ancho */
 }
 
 form input:focus,
 form textarea:focus,
 form select:focus {
-    outline: 2px solid #00e5ff;
-    background: rgba(255, 255, 255, 0.1);
+    outline: 2px solid #00e5ff; /* borde azul claro al enfocar */
+    background: rgba(255, 255, 255, 0.1); /* fondo más claro */
 }
 
 form button {
-    width: 100%;
-    padding: 12px;
-    background: linear-gradient(135deg, #00d4ff 0%, #0099cc 100%);
-    color: #000000;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: all 0.3s ease;
+    width: 100%; /* ancho completo */
+    padding: 12px; /* espaciado interno */
+    background: linear-gradient(135deg, #00d4ff 0%, #0099cc 100%); /* degradado azul */
+    color: #000000; /* texto negro */
+    border: none; /* sin borde */
+    border-radius: 4px; /* esquinas redondeadas */
+    cursor: pointer; /* cursor de mano */
+    font-weight: bold; /* texto grueso */
+    transition: all 0.3s ease; /* cambios suaves */
 }
 
 form button:hover {
-    background: linear-gradient(135deg, #00e5ff 0%, #00b3e5 100%);
-    transform: translateY(-2px);
+    background: linear-gradient(135deg, #00e5ff 0%, #00b3e5 100%); /* degradado más claro */
+    transform: translateY(-2px); /* sube un poco */
 }
 
-/* Login */
+/* Login: formulario especial para acceso */
 .formulario-login {
-    background: rgba(0, 20, 40, 0.95);
-    padding: 30px;
-    border-radius: 8px;
-    max-width: 420px;
-    margin: 30px auto;
-    border: 2px solid #00d4ff;
-    box-shadow: 0 8px 24px rgba(0, 212, 255, 0.15);
+    background: rgba(0, 20, 40, 0.95); /* fondo muy oscuro */
+    padding: 30px; /* espaciado interno */
+    border-radius: 8px; /* esquinas redondeadas */
+    max-width: 420px; /* ancho pequeño */
+    margin: 30px auto; /* centrado */
+    border: 2px solid #00d4ff; /* borde azul */
+    box-shadow: 0 8px 24px rgba(0, 212, 255, 0.15); /* sombra */
 }
 
 .formulario-login h2 {
-    color: #00d4ff;
-    text-align: center;
-    margin-bottom: 12px;
+    color: #00d4ff; /* azul claro */
+    text-align: center; /* centrado */
+    margin-bottom: 12px; /* espacio abajo */
 }
 
 .grupo-formulario {
-    margin-bottom: 14px;
+    margin-bottom: 14px; /* espacio abajo entre grupos */
 }
 
 .formulario-login label {
-    color: #ffffff;
-    font-weight: bold;
-    margin-bottom: 6px;
-    display: block;
+    color: #ffffff; /* texto blanco */
+    font-weight: bold; /* texto grueso */
+    margin-bottom: 6px; /* espacio abajo */
+    display: block; /* en su propia línea */
 }
 
 .formulario-login input[type="email"],
 .formulario-login input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #00d4ff;
-    border-radius: 4px;
-    background: rgba(255,255,255,0.03);
-    color: #fff;
+    width: 100%; /* ancho completo */
+    padding: 10px; /* espaciado interno */
+    border: 1px solid #00d4ff; /* borde azul fino */
+    border-radius: 4px; /* esquinas redondeadas */
+    background: rgba(255,255,255,0.03); /* fondo muy oscuro */
+    color: #fff; /* texto blanco */
 }
 
 .formulario-login button[type="submit"] {
-    width: 100%;
-    padding: 12px;
-    background: linear-gradient(135deg,#00d4ff 0%,#0099cc 100%);
-    color: #000;
-    border: none;
-    border-radius: 4px;
-    font-weight: bold;
-    cursor: pointer;
+    width: 100%; /* ancho completo */
+    padding: 12px; /* espaciado interno */
+    background: linear-gradient(135deg,#00d4ff 0%,#0099cc 100%); /* degradado azul */
+    color: #000; /* texto negro */
+    border: none; /* sin borde */
+    border-radius: 4px; /* esquinas redondeadas */
+    font-weight: bold; /* texto grueso */
+    cursor: pointer; /* cursor de mano */
 }
 
 .formulario-login button[type="submit"]:hover {
-    background: linear-gradient(135deg,#00e5ff 0%,#00b3e5 100%);
+    background: linear-gradient(135deg,#00e5ff 0%,#00b3e5 100%); /* degradado más claro */
 }
 
-/* Mensaje de login */
 .mensaje-login {
-    color: #ffdddd;
-    margin-bottom: 12px;
+    color: #ffdddd; /* rosa claro para mensajes */
+    margin-bottom: 12px; /* espacio abajo */
 }
 
-/* Audio */
+/* Audio genérico: reproductor general */
 audio {
-    width: 100%;
-    max-width: 400px;
-    margin: 20px auto;
-    display: block;
+    width: 100%; /* ancho completo */
+    max-width: 400px; /* pero limitado a 400px */
+    margin: 20px auto; /* centrado con espacio */
+    display: block; /* en su propia línea */
 }
 
-/* Reglas movidas desde el HTML: */
+/* Reglas extra para video: valores alternativos */
 .video-section video {
-	width: 100%;
-	max-width: 600px;
-	height: auto;
-	display: block;
+	width: 100%; /* ancho completo */
+	max-width: 600px; /* límite alternativo */
+	height: auto; /* altura proporcional */
+	display: block; /* en su propia línea */
 }
 
-/* Opcional: audio y otros medios para mantener consistencia */
+/* Compatibilidad: asegura que audio/video sean responsivos */
 .audio-section audio,
 .video-section audio,
 video,
 audio {
-	max-width: 100%;
-	box-sizing: border-box;
+	max-width: 100%; /* no excede el contenedor */
+	box-sizing: border-box; /* incluye borde en el tamaño */
 }
 
-/* Ajustes para el panel de herramientas (inputs y forma) */
+/* Panel flotante de herramientas (solo PC) */
+.sl-panel,
+#sl-js-panel {
+    position: fixed; /* flotante */
+    top: 72px; /* bajo la barra de navegación */
+    left: 12px; /* a la izquierda */
+    right: auto; /* sin lado derecho fijo */
+    z-index: 1300; /* encima de casi todo */
+    width: 320px; /* ancho fijo */
+    max-width: calc(100% - 24px); /* respeta los márgenes */
+    max-height: calc(100vh - 96px); /* altura máxima sin salir de pantalla */
+    display: flex; /* distribuye verticalmente */
+    flex-direction: column; /* elementos apilados */
+    gap: 8px; /* espacio entre elementos */
+    padding: 10px; /* espaciado interno */
+    border-radius: 10px; /* esquinas redondeadas */
+    background: linear-gradient(180deg, rgba(10,14,20,0.88), rgba(6,9,14,0.95)); /* degradado muy oscuro */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.02); /* sombra externa e interna */
+    backdrop-filter: blur(6px); /* efecto de vidrio esmerilado */
+    color: #eafaff; /* texto claro */
+    transition: transform .12s ease, opacity .12s ease; /* cambios suaves */
+    font-family: 'Segoe UI', Tahoma, Arial, sans-serif; /* fuente moderna */
+}
+
+/* Encabezado del panel: título y botón */
+.sl-header {
+    display: flex; /* distribuye horizontalmente */
+    align-items: center; /* alinea al centro */
+    justify-content: space-between; /* distribuye a los lados */
+    gap: 8px; /* espacio entre elementos */
+    padding-bottom: 4px; /* espacio abajo */
+    border-bottom: 1px solid rgba(255,255,255,0.03); /* línea separadora muy tenue */
+}
+
+.sl-title {
+    font-size: 13px; /* pequeño */
+    font-weight: 700; /* texto grueso */
+    letter-spacing: .3px; /* espaciado entre letras */
+    color: #bff6ff; /* azul muy claro */
+}
+
+/* Botón cerrar: discreto */
+.sl-close {
+    background: transparent; /* sin fondo */
+    border: none; /* sin borde */
+    color: #9fe9ff; /* azul claro */
+    cursor: pointer; /* cursor de mano */
+    font-size: 14px; /* tamaño pequeño */
+    padding: 4px 6px; /* espaciado pequeño */
+    border-radius: 6px; /* esquinas redondeadas */
+}
+
+.sl-close:hover {
+    background: rgba(255,255,255,0.02); /* fondo muy claro */
+    transform: translateY(-1px); /* sube un poco */
+}
+
+/* Formulario del panel: entrada de datos */
 .sl-panel .sl-form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 6px;
-    align-items: center;
-    margin-bottom: 8px;
+    display: grid; /* cuadrícula */
+    grid-template-columns: 1fr 1fr; /* 2 columnas iguales */
+    gap: 8px; /* espacio entre elementos */
+    align-items: start; /* alinea arriba */
+    margin: 6px 0 0 0; /* margen pequeño */
 }
 
-.sl-input {
-    width: 100%;
-    padding: 6px 8px;
-    border: 1px solid rgba(255,255,255,0.08);
-    border-radius: 4px;
-    background: rgba(255,255,255,0.03);
-    color: #eafaff;
-    font-size: 13px;
-    box-sizing: border-box;
+.sl-form label {
+    display: block; /* en su propia línea */
+    width: 100%; /* ancho completo */
 }
 
 .sl-form label small {
-    display: block;
-    color: #bfefff;
-    margin-bottom: 4px;
-    font-size: 11px;
+    display: block; /* etiqueta pequeña en su línea */
+    color: #a9e9ff; /* azul claro */
+    font-size: 11px; /* muy pequeño */
+    margin-bottom: 6px; /* espacio abajo */
 }
 
-/* Hacer que los botones del panel quepan mejor en dos columnas si hace falta */
-.sl-controls { gap: 6px; }
-.sl-controls .sl-btn { padding: 6px 6px; font-size: 12px; }
-
-/* Mantener la salida legible */
-.sl-output { font-family: monospace; line-height: 1.3; }
-/* Panel de herramientas SpeedLine (PC only) */
-.sl-panel,
-#sl-js-panel {
-    position: fixed;
-    top: 72px;                      /* bajo la navegación */
-    left: 12px;                     /* posición en la izquierda (PC) */
-    right: auto;
-    z-index: 1300;
-    width: 320px;                   /* tamaño cómodo para PC */
-    max-width: calc(100% - 24px);
-    max-height: calc(100vh - 96px);
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    padding: 10px;
-    border-radius: 10px;
-    background: linear-gradient(180deg, rgba(10,14,20,0.88), rgba(6,9,14,0.95));
-    box-shadow: 0 10px 30px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.02);
-    backdrop-filter: blur(6px);
-    color: #eafaff;
-    transition: transform .12s ease, opacity .12s ease;
-    font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
-}
-
-/* Encabezado: título y botón cerrar alineados */
-.sl-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 8px;
-    padding-bottom: 4px;
-    border-bottom: 1px solid rgba(255,255,255,0.03);
-}
-.sl-title { font-size: 13px; font-weight: 700; letter-spacing: .3px; color: #bff6ff; }
-
-/* Botón cerrar más discreto */
-.sl-close {
-    background: transparent;
-    border: none;
-    color: #9fe9ff;
-    cursor: pointer;
-    font-size: 14px;
-    padding: 4px 6px;
-    border-radius: 6px;
-}
-.sl-close:hover { background: rgba(255,255,255,0.02); transform: translateY(-1px); }
-
-/* Formulario: labels pequeños encima, inputs de ancho completo, buena separación */
-.sl-panel .sl-form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 8px;
-    align-items: start;
-    margin: 6px 0 0 0;
-}
-.sl-form label { display: block; width: 100%; }
-.sl-form label small { display:block; color:#a9e9ff; font-size:11px; margin-bottom:6px; }
-
-/* Inputs más legibles */
+/* Inputs del panel: campos de entrada */
 .sl-input {
-    width: 100%;
-    padding: 8px 10px;
-    border: 1px solid rgba(255,255,255,0.06);
-    border-radius: 6px;
-    background: rgba(255,255,255,0.02);
-    color: #eafaff;
-    font-size: 13px;
-    outline: none;
-    box-sizing: border-box;
+    width: 100%; /* ancho completo */
+    padding: 8px 10px; /* espaciado interno */
+    border: 1px solid rgba(255,255,255,0.06); /* borde muy tenue */
+    border-radius: 6px; /* esquinas redondeadas */
+    background: rgba(255,255,255,0.02); /* fondo muy oscuro */
+    color: #eafaff; /* texto claro */
+    font-size: 13px; /* pequeño */
+    outline: none; /* sin outline por defecto */
+    box-sizing: border-box; /* incluye borde en el ancho */
 }
+
 .sl-input:focus {
-    box-shadow: 0 0 0 3px rgba(0,187,255,0.08);
-    border-color: rgba(0,187,255,0.35);
+    box-shadow: 0 0 0 3px rgba(0,187,255,0.08); /* aura azul al enfocar */
+    border-color: rgba(0,187,255,0.35); /* borde azul más visible */
 }
 
-/* Controles: botones ocupan dos columnas fluidas y se adaptan */
+/* Controles: botones del panel */
 .sl-controls {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    align-items: center;
+    display: flex; /* distribuye en fila */
+    flex-wrap: wrap; /* envuelve si es necesario */
+    gap: 8px; /* espacio entre botones */
+    align-items: center; /* alinea al centro */
 }
+
 .sl-controls > .sl-btn {
-    flex: 1 1 calc(50% - 8px);
-    min-width: 0;
-    padding: 8px 8px;
-    font-size: 12px;
-    border-radius: 6px;
-    text-align: center;
-    background: linear-gradient(180deg,#00bfff,#00a3d9);
-    color: #001;
-    border: none;
-    cursor: pointer;
-    font-weight: 700;
+    flex: 1 1 calc(50% - 8px); /* 50% de ancho menos el espacio */
+    min-width: 0; /* puede ser más pequeño */
+    padding: 8px 8px; /* espaciado interno */
+    font-size: 12px; /* pequeño */
+    border-radius: 6px; /* esquinas redondeadas */
+    text-align: center; /* texto centrado */
+    background: linear-gradient(180deg,#00bfff,#00a3d9); /* degradado azul */
+    color: #001; /* texto muy oscuro */
+    border: none; /* sin borde */
+    cursor: pointer; /* cursor de mano */
+    font-weight: 700; /* texto grueso */
 }
+
 .sl-controls > .sl-btn.full {
-    flex-basis: 100%;
+    flex-basis: 100%; /* ancho completo si tiene clase 'full' */
 }
-.sl-controls > .sl-btn:hover { opacity: 0.95; transform: translateY(-1px); }
 
-/* Área de salida: altura controlada, scroll y estilo legible */
+.sl-controls > .sl-btn:hover {
+    opacity: 0.95; /* más transparente */
+    transform: translateY(-1px); /* sube un poco */
+}
+
+/* Área de salida: muestra resultados */
 .sl-output {
-    background: rgba(0,0,0,0.28);
-    border-radius: 6px;
-    padding: 8px;
-    height: 170px;
-    overflow: auto;
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", monospace;
-    font-size: 12px;
-    line-height: 1.35;
-    color: #dff8ff;
-    border: 1px solid rgba(255,255,255,0.02);
+    background: rgba(0,0,0,0.28); /* fondo oscuro */
+    border-radius: 6px; /* esquinas redondeadas */
+    padding: 8px; /* espaciado interno */
+    height: 170px; /* altura fija */
+    overflow: auto; /* scroll si hay mucho contenido */
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", monospace; /* fuente de código */
+    font-size: 12px; /* pequeño */
+    line-height: 1.35; /* espaciado entre líneas */
+    color: #dff8ff; /* azul claro */
+    border: 1px solid rgba(255,255,255,0.02); /* borde muy tenue */
 }
 
-/* Scrollbar fino y visible (WebKit) */
-.sl-output::-webkit-scrollbar { width: 8px; height: 8px; }
-.sl-output::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.45); border-radius: 8px; }
-.sl-output::-webkit-scrollbar-track { background: transparent; }
+/* Scrollbar personalizada: estilos del scroll */
+.sl-output::-webkit-scrollbar {
+    width: 8px; /* ancho del scrollbar */
+    height: 8px; /* altura */
+}
+
+.sl-output::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,0.45); /* color del pulgar */
+    border-radius: 8px; /* redondeado */
+}
+
+.sl-output::-webkit-scrollbar-track {
+    background: transparent; /* fondo transparente */
+}
