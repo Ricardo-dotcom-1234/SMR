@@ -180,33 +180,77 @@ a:focus {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
 
+/* Estilos movidos desde Precio.html (clases para .propuesta) */
+.propuesta .muted {
+    margin-top: 12px;
+    font-size: 14px;
+    color: #cfeefc;
+}
+
+.propuesta .return {
+    margin-top: 16px;
+}
+
+/* enlace de retorno con el mismo estilo visual usado en el proyecto */
+.propuesta .link-return {
+    color: #00d4ff;
+    text-decoration: underline;
+}
+
 /* Video */
 .video-section {
     margin-top: 60px;
     padding: 40px 20px;
-}
-
-.video-section h2 {
-    color: #00d4ff;
-    font-size: 28px;
-    margin-bottom: 30px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centra video y texto dentro de la sección */
+    justify-content: center;
+    gap: 16px;
+    text-align: center;
+    position: relative;
 }
 
 .video-section video {
-    max-width: 600px;
-    border: 3px solid #00d4ff;
-    border-radius: 8px;
-    box-shadow: 0 0 20px rgba(0, 212, 255, 0.3);
-    margin: 0 auto;
+    width: 100%;
+    max-width: 800px; /* mayor tamaño pero controlado */
+    height: auto;
     display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.6);
 }
 
+/* Texto de la sección debajo del video */
 .video-section p {
-    margin-top: 20px;
+    margin-top: 8px;
     color: #ffffff;
     font-size: 16px;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+/* Audio: más pequeño y centrado */
+#audio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 0 28px;
+}
+
+#audio audio,
+.audio-player,
+audio {
+    width: 100%;
+    max-width: 320px; /* tamaño reducido */
+    margin: 8px auto; /* centrado */
+    display: block;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background: rgba(0,0,0,0.34); /* sutil fondo para destacar sobre la imagen */
+    padding: 6px; /* evita que el control quede pegado al borde */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+    position: relative;
 }
 
 /* Productos */
@@ -415,4 +459,80 @@ audio {
     max-width: 400px;
     margin: 20px auto;
     display: block;
+}
+
+/* Reglas movidas desde el HTML: */
+.video-section video {
+	width: 100%;
+	max-width: 600px;
+	height: auto;
+	display: block;
+}
+
+/* Opcional: audio y otros medios para mantener consistencia */
+.audio-section audio,
+.video-section audio,
+video,
+audio {
+	max-width: 100%;
+	box-sizing: border-box;
+}
+
+/* Estilos para el panel JS (Acompañante_java1.js) */
+.sl-panel,
+#sl-js-panel {
+    position: fixed;
+    right: 12px;
+    bottom: 12px;
+    z-index: 3000;
+    background: rgba(8,12,18,0.85);
+    color: #eafaff;
+    padding: 10px;
+    border-radius: 8px;
+    font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+    font-size: 13px;
+    width: 300px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.6);
+}
+
+.sl-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+.sl-title { font-size: 14px; }
+
+.sl-controls {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 8px; /* antes estaba inline en JS */
+}
+
+.sl-btn {
+    background: #00bfff;
+    color: #001;
+    border: none;
+    padding: 6px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+}
+.sl-btn:hover { opacity: 0.9; }
+
+.sl-output {
+    background: rgba(255,255,255,0.02);
+    padding: 8px;
+    border-radius: 6px;
+    height: 150px;
+    overflow: auto;
+    margin: 0;
+    font-size: 12px;
+    white-space: pre-wrap;
+}
+
+/* accesibilidad y responsividad */
+@media (max-width: 420px) {
+    .sl-panel, #sl-js-panel { width: 92%; left: 4%; right: 4%; bottom: 12px; }
+    .sl-output { height: 120px; font-size: 11px; }
 }
