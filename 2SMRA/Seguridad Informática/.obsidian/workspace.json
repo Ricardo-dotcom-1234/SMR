@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ejercicios UD2.md",
+                "file": "Examen 3.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Ejercicios UD2"
+              "title": "Examen 3"
             }
           }
         ]
@@ -171,8 +171,12 @@
   },
   "active": "fcdaafd8cae2f70f",
   "lastOpenFiles": [
+    "Examen 2.md",
+    "Examen 4.md",
+    "Examen 3.md",
+    "Iptables 2.md",
+    "Ejercicios UD2.md",
     "Tema  2.md",
-    "Tipos de SAI.md",
-    "Ejercicios UD2.md"
+    "Tipos de SAI.md"
   ]
 }
