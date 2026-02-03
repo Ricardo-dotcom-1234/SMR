@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 8</title>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Rellenar</legend>
+            <p>
+                <input type="checkbox" id="ingles" name="idioma" value="ingles">
+                <label for="ingles">Inglés</label><br>
+                <input type="checkbox" id="aleman" name="idioma" value="aleman">
+                <label for="aleman">Alemán</label><br>
+                <input type="checkbox" id="frances" name="idioma" value="frances">
+                <label for="frances">Francés</label>
+            </p>
+            <p>
+                <select name="dispositivo">
+                    <option value="usb">USB</option>
+                </select>
+            </p>
+            <p>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre"><br>
+                <label for="apellidos">Apellidos</label>
+                <input type="text" id="apellidos" name="apellidos">
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Indique sus preferencias por favor</legend>
+            <p>
+                <select name="sexo_lista" size="2">
+                    <option value="hombre">Hombre</option>
+                    <option value="mujer">Mujer</option>
+                </select>
+            </p>
+            <p>
+                <input type="checkbox" id="pref_mujer" name="pref" value="mujer">
+                <label for="pref_mujer">Mujer</label><br>
+                <input type="checkbox" id="pref_hombre" name="pref" value="hombre">
+                <label for="pref_hombre">Hombre</label>
+            </p>
+            <p>
+                <label for="fecha">Elija una fecha:</label>
+                <input type="text" id="fecha" name="fecha" placeholder="dd / mm / aaaa">
+            </p>
+        </fieldset>
+    </form>
+</body>
+
+</html>
